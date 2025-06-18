@@ -10,16 +10,26 @@
     <h1 id="title" onclick="window.location.href='index.html'">돈주머니 ♤</h1>
     <nav>
       <button class="menu-btn" onclick="location.href='setup.html'">My 지갑</button>
-      <button class="menu-btn">월별 지갑</button>
+      <button class="menu-btn" onclick="location.href='my.html'">월별 지갑</button>
     </nav>
   </header>
 
   <main>
     <h2>통장 설정</h2>
     <div id="account-list"></div>
-    <div class="button-group">
-      <button id="add-account" class="fill-btn">통장 추가</button>
-      <button id="remove-account" class="delete-btn">통장 삭제</button>
+
+    <div id="account-detail" class="hidden" style="margin-top:20px; padding:10px; border:1px solid #ccc; border-radius:8px;">
+        <h3 id="selected-account-name"></h3>
+        <div>
+        소지금액: <span id="balance" style="cursor:pointer; font-weight:bold; font-size:1.2em;">0</span>원
+        <button id="increase" style="background:#f44336; border:none; border-radius:50%; color:#fff; width:30px; height:30px; font-weight:bold; margin-left:10px; cursor:pointer;">+</button>
+        <button id="decrease" style="background:#2196f3; border:none; border-radius:50%; color:#fff; width:30px; height:30px; font-weight:bold; margin-left:5px; cursor:pointer;">-</button>
+        </div>
+    </div>
+
+    <div class="button-group" style="margin-top:20px;">
+        <button id="add-account" class="fill-btn">통장 추가</button>
+        <button id="remove-account" class="delete-btn">통장 삭제</button>
     </div>
   </main>
 
