@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>기본 세팅 - CashPouch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="title" onclick="window.location.href='index.html'">돈주머니 ♤</h1>
+    <nav>
+      <button class="menu-btn" onclick="location.href='setup.html'">My 지갑</button>
+      <button class="menu-btn">월별 지갑</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>통장 설정</h2>
+    <div id="account-list"></div>
+    <div class="button-group">
+      <button id="add-account" class="fill-btn">통장 추가</button>
+      <button id="remove-account" class="delete-btn">통장 삭제</button>
+    </div>
+  </main>
+
+  <!-- 모달 영역 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <input type="text" id="modal-input" class="modal-input hidden" />
+      <div class="modal-buttons">
+        <button id="modal-yes">YES</button>
+        <button id="modal-no">NO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="wallet.js"></script>
+</body>
+</html>

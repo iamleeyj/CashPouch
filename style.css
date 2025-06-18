@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'PakDahyun';
+  src: url('fonts/온글잎 박다현체.ttf') format('truetype');
+}
+
+body {
+  font-family: 'PakDahyun', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #fffef2;
+}
+
+header {
+  background-color: #f2c84b; /* 머스타드색 */
+  padding: 1rem;
+}
+
+#title {
+  color: #5d3a00; /* 갈색 */
+  font-size: 2.2rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.menu-btn {
+  background-color: #3c8140;
+  color: white;
+  border: none;
+  margin: 0 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-wallet {
+  margin-top: 2rem;
+}
+
+.wallet-img {
+  width: 100px;
+}
+
+.empty-msg {
+  font-weight: bold;
+  color: #5d3a00;
+  margin-top: 1rem;
+}
+
+.fill-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #f28500;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 기본 세팅용 */
+h2 {
+  margin-top: 2rem;
+  color: #5d3a00;
+}
+
+.button-group {
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.delete-btn:hover::after {
+  content: "복구 불가능!";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+/* 계좌 리스트 */
+#account-list {
+  margin: 1rem auto;
+  max-width: 300px;
+  text-align: left;
+}
+
+.account-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 모달 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  margin: 10% auto;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'PakDahyun', sans-serif;
+}
+
+.modal-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.modal-input {
+  margin-top: 1rem;
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.account-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f6e58d;
+  color: #5b3a29;
+  font-weight: bold;
+  border-radius: 8px;
+}
